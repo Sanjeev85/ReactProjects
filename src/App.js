@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 
-const tahoe_peaks = [
+const peaks = [
   { name: "Freel", elevation: 10891 },
   { name: "Monument", elevation: 10067 },
   { name: "Pyramid", elevation: 9983 },
@@ -24,7 +24,7 @@ function List({ data, renderItem, renderEmpty }) {
 function App() {
   return (
     <List
-      data={tahoe_peaks}
+      data={peaks}
       renderEmpty={<p>List is Empty</p>}
       renderItem={(item) => (
         <>
